@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,9 +25,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Mi primer App'),
         ),
-        body: Center(
-          child: Text('Body App'),
-        ),
+        body: DescriptionPlace()
       ) ,
     );
   }
