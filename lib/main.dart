@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Mi primer App'),
         ),
-        body: DescriptionPlace()
+        body: DescriptionPlace('Bahamas', 4, 'Lorem ipsum panim fer reds')
       ) ,
     );
   }
