@@ -56,6 +56,8 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  assets:
+    - assets/img/akita.jpg
   fonts:
     - family: Lato
       fonts:
