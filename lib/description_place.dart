@@ -39,9 +39,10 @@ class DescriptionPlace extends StatelessWidget {
         descriptionPlace,
         textAlign: TextAlign.left,
         style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFF56575a)),
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+          color: Color(0xFF56575a),
+        ),
       ),
     );
 
@@ -51,7 +52,11 @@ class DescriptionPlace extends StatelessWidget {
           margin: EdgeInsets.only(top: 320, left: 20, right: 20),
           child: Text(
             namePlace,
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
+            style: TextStyle(
+              fontFamily: 'Lato',
+              fontSize: 30,
+              fontWeight: FontWeight.w900
+            ),
             textAlign: TextAlign.left,
           ),
         ),
