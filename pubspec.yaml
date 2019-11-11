@@ -58,6 +58,8 @@ flutter:
   # example:
   assets:
     - assets/img/akita.jpg
+    - assets/img/pazdera.png
+    - assets/img/ana.jpg
   fonts:
     - family: Lato
       fonts:
