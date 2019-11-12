@@ -4,7 +4,7 @@ import 'review.dart';
 class ReviewList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Wrap(
+    return Column(
       children: <Widget>[
         Review(
           'assets/img/akita.jpg',

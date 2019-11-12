@@ -46,6 +46,7 @@ class Review extends StatelessWidget {
     );
 
     final userComment = Container(
+      width: MediaQuery.of(context).size.width*0.65,
       margin: EdgeInsets.only(left: 20),
       child: Text(
         comment,
