@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget {
-  String title = 'Popular';
+  String title;
+  double height;
+  double alignX;
+  double alignY;
 
-  GradientBack(this.title);
+  GradientBack(this.title, this.height, this.alignX, this.alignY);
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+      height: height,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Color(0xFF4268D3), Color(0xFF584CD1)],
@@ -25,7 +28,7 @@ class GradientBack extends StatelessWidget {
           fontFamily: 'Lato'
         ),
       ),
-      alignment: Alignment(-0.9, -0.6),
+      alignment: Alignment(alignX, alignY),
     );
   }
 }
