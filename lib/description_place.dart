@@ -11,7 +11,7 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final star_half = Container(
-      margin: EdgeInsets.only(top: 323, right: 3),
+      margin: EdgeInsets.only(top: 343, right: 3),
       child: Icon(
         Icons.star_half,
         color: Color(0xFFF2C611),
@@ -19,7 +19,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star_border = Container(
-      margin: EdgeInsets.only(top: 323, right: 3),
+      margin: EdgeInsets.only(top: 343, right: 3),
       child: Icon(
         Icons.star_border,
         color: Color(0xFFF2C611),
@@ -27,7 +27,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star = Container(
-      margin: EdgeInsets.only(top: 323, right: 3),
+      margin: EdgeInsets.only(top: 343, right: 3),
       child: Icon(
         Icons.star,
         color: Color(0xFFF2C611),
@@ -50,7 +50,7 @@ class DescriptionPlace extends StatelessWidget {
     final title_stars = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 320, left: 20, right: 20),
+          margin: EdgeInsets.only(top: 340, left: 20, right: 20),
           child: Text(
             namePlace,
             style: TextStyle(
