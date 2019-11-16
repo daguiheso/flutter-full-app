@@ -1,43 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/profile/profile_bar_actions.dart';
+import 'package:hello_world_flutter/profile/profile_info.dart';
 
 class HeaderProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final perfilPhoto = Container(
-      margin: EdgeInsets.only(right: 20),
-      width: 90,
-      height: 90,
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.white, width: 2),
-        shape: BoxShape.circle,
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage('assets/img/profile.jpeg'),
-        )
+    final title = Container(
+      margin: EdgeInsets.only(bottom: 14),
+      child: Text(
+        'Profile',
+        style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+          fontFamily: 'Lato'
+        ),
       ),
     );
 
-    final perfilDescription = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          'Pathum Tzoo',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-            fontFamily: 'Lato',
-          ),
-        ),
-        Text(
-          'daguiheso@gmail.com',
-          style: TextStyle(color: Colors.white54, fontFamily: 'Lato'),
+    return Container(
+      height: 300,
+      padding: EdgeInsets.only(top: 50, left: 20, right: 20),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Color(0xFF4268D3), Color(0xFF584CD1)],
+          begin: FractionalOffset(0.2, 0),
+          end: FractionalOffset(1, 0.6),
+          stops: [0, 0.6],
+          tileMode: TileMode.clamp
         )
-      ],
-    );
-
-    return Row(
-      children: <Widget>[perfilPhoto, perfilDescription],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          title,
+          ProfileInfo(),
+          ProfileBarActions(),
+        ],
+      ),
     );
   }
 
