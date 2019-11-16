@@ -43,7 +43,7 @@ class ProfileBarActions extends StatelessWidget {
           ),
         ],
       ),
-    );;
+    );
   }
 
 }

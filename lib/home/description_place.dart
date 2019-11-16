@@ -10,7 +10,7 @@ class DescriptionPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final star_half = Container(
+    final starHalf = Container(
       margin: EdgeInsets.only(top: 343, right: 3),
       child: Icon(
         Icons.star_half,
@@ -18,7 +18,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final star_border = Container(
+    final starBorder = Container(
       margin: EdgeInsets.only(top: 343, right: 3),
       child: Icon(
         Icons.star_border,
@@ -47,7 +47,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row(
+    final titleStars = Row(
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(top: 340, left: 20, right: 20),
@@ -66,8 +66,8 @@ class DescriptionPlace extends StatelessWidget {
             star,
             star,
             star,
-            star_half,
-            star_border,
+            starHalf,
+            starBorder,
           ],
         )
       ],
@@ -76,7 +76,7 @@ class DescriptionPlace extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        title_stars,
+        titleStars,
         description,
         ButtonPurple('Navigate')
       ],

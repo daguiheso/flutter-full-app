@@ -9,8 +9,6 @@ class CardInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenSize = MediaQuery.of(context).size;
-
     final image = Container(
       height: 230,
       width: 400,

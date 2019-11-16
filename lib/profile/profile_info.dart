@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/profile/header_profile.dart';
-import 'package:hello_world_flutter/profile/profile_bar_actions.dart';
 
 class ProfileInfo extends StatelessWidget {
   @override
