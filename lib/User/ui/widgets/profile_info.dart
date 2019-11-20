@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ProfileInfo extends StatelessWidget {
+
+  String imgProfile;
+  String name;
+  String email;
+
+  ProfileInfo(this.imgProfile, this.name, this.email);
+
   @override
   Widget build(BuildContext context) {
     final perfilPhoto = Container(
@@ -12,7 +19,7 @@ class ProfileInfo extends StatelessWidget {
         shape: BoxShape.circle,
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: AssetImage('assets/img/profile.jpeg'),
+          image: AssetImage(imgProfile),
         )
       ),
     );
@@ -21,17 +28,21 @@ class ProfileInfo extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          'Pathum Tzoo',
+          name,
           style: TextStyle(
             color: Colors.white,
             fontSize: 18,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.bold,
             fontFamily: 'Lato',
           ),
         ),
         Text(
-          'daguiheso@gmail.com',
-          style: TextStyle(color: Colors.white54, fontFamily: 'Lato'),
+          email,
+          style: TextStyle(
+            color: Colors.white30,
+            fontSize: 15,
+            fontFamily: 'Lato'
+          ),
         )
       ],
     );

@@ -34,7 +34,7 @@ class HeaderProfile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           title,
-          ProfileInfo(),
+          ProfileInfo('assets/img/profile.jpeg', 'Pathum Tzoo', 'daguiheso@gmail.com'),
           ProfileBarActions(),
         ],
       ),
