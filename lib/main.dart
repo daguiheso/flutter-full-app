@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/navigation/navigation_trips_cupertino.dart';
+import 'package:hello_world_flutter/navigation_trips_cupertino.dart';
 
 void main() => runApp(MyApp());
 

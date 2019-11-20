@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/profile/profile_bar_actions.dart';
-import 'package:hello_world_flutter/profile/profile_info.dart';
+import 'package:hello_world_flutter/User/ui/widgets/profile_bar_actions.dart';
+import 'package:hello_world_flutter/User/ui/widgets/profile_info.dart';
 
 class HeaderProfile extends StatelessWidget {
   @override

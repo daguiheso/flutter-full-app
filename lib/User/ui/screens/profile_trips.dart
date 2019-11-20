@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/profile/card_info_list.dart';
-import 'package:hello_world_flutter/profile/header_profile.dart';
-import 'package:hello_world_flutter/shared/gradient_back.dart';
+import 'package:hello_world_flutter/User/ui/screens/header_profile.dart';
+import 'package:hello_world_flutter/User/ui/widgets/card_info_list.dart';
+import 'package:hello_world_flutter/widgets/gradient_back.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override

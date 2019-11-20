@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/shared/fav_button.dart';
+import 'package:hello_world_flutter/widgets/fav_button.dart';
 
 class CardImage extends StatelessWidget {
   String pathImage;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/profile/card_info.dart';
+import 'package:hello_world_flutter/User/ui/widgets/card_info.dart';
 
 class CardInfoList extends StatelessWidget {
   @override
