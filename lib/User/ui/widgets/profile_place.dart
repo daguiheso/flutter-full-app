@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/Place/model/place.dart';
 import 'package:hello_world_flutter/User/ui/widgets/profile_place_info.dart';
 
 class ProfilePlace extends StatelessWidget {
 
   String image;
-  String name;
-  String where;
-  String type;
+  Place place;
 
-  ProfilePlace(this.image, this.name, this.where, this.type);
+  ProfilePlace(this.image, this.place);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class ProfilePlace extends StatelessWidget {
       alignment: Alignment(0, 0.8),
       children: <Widget>[
         photoCard,
-        ProfilePlaceInfo(name, where, type)
+        ProfilePlaceInfo(place)
       ]
     );
   }

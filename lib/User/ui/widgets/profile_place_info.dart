@@ -1,35 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/Place/model/place.dart';
 
 class ProfilePlaceInfo extends StatelessWidget {
-  String name;
-  String where;
-  String type;
+  Place place;
 
-  ProfilePlaceInfo(this.name, this.where, this.type);
+  ProfilePlaceInfo(this.place);
 
   @override
   Widget build(BuildContext context) {
-
     final cardTitle = Container(
       margin: EdgeInsets.only(bottom: 8),
       child: Text(
-        name,
+        this.place.name,
         style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20, fontFamily: 'Lato'),
       )
     );
 
-    final cardDescription= Container(
+    final cardDescription = Container(
       margin: EdgeInsets.only(bottom: 6),
       child: Text(
-        where,
-        style: TextStyle(fontSize: 14, color: Colors.grey, fontFamily: 'Lato'),
+        this.place.where,
+        style: TextStyle(
+          fontSize: 12,
+          color: Color.fromRGBO(0, 0, 0, 0.4),
+          fontFamily: 'Lato',
+          fontWeight: FontWeight.bold
+        ),
       )
     );
 
     final cardValue = Container(
       child: Text(
-        type,
-        style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15, color: Colors.orange, fontFamily: 'Lato'),
+        this.place.type,
+        style: TextStyle(
+          color: Color.fromRGBO(0, 0, 0, 0.4),
+          fontFamily: 'Lato',
+          fontSize: 12.0,
+          fontWeight: FontWeight.bold
+        ),
       )
     );
 
