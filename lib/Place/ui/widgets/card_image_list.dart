@@ -1,22 +1,31 @@
+import 'package:button_animate/Place/ui/widgets/card_image.dart';
 import 'package:flutter/material.dart';
-import 'card_image.dart';
 
 class CardImageList extends StatelessWidget {
+  const CardImageList({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 350,
+    return SizedBox(
+      height: 350.0,
       child: ListView(
-        padding: EdgeInsets.all(25),
+        padding: const EdgeInsets.all(25.0),
         scrollDirection: Axis.horizontal,
-        children: <Widget>[
-          CardImage('assets/img/slider1.jpg'),
-          CardImage('assets/img/slider2.jpg'),
-          CardImage('assets/img/slider3.jpg'),
-          CardImage('assets/img/slider4.jpg'),
+        children: const [
+          CardImage(
+            pathImage: 'assets/img/slider1.jpg',
+          ),
+          CardImage(
+            pathImage: 'assets/img/slider2.jpg',
+          ),
+          CardImage(
+            pathImage: 'assets/img/slider3.jpg',
+          ),
+          CardImage(
+            pathImage: 'assets/img/slider4.jpg',
+          ),
         ],
       ),
     );
   }
-
 }

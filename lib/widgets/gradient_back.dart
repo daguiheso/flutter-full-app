@@ -1,34 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class GradientBack extends StatelessWidget {
-  String title;
-  double height;
-  double alignX;
-  double alignY;
+  final String title;
 
-  GradientBack(this.title, this.height, this.alignX, this.alignY);
+  const GradientBack({Key? key, required this.title}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Color(0xFF4268D3), Color(0xFF584CD1)],
-          begin: FractionalOffset(0.2, 0),
-          end: FractionalOffset(1, 0.6),
-          stops: [0, 0.6],
-          tileMode: TileMode.clamp)
-        ),
-      child: Text(
-        title,
-        style: TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-          fontSize: 30,
-          fontFamily: 'Lato'
-        ),
-      ),
-      alignment: Alignment(alignX, alignY),
+      height: 250.0,
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(
+              colors: [
+                Color(0XFF4268D3),
+                Color(0XFF584CD1),
+              ],
+              begin: FractionalOffset(0.2, 0.0),
+              end: FractionalOffset(1.0, 0.6),
+              stops: [0.0, 0.6],
+              tileMode: TileMode.clamp)),
+      child: Text(title,
+          style: GoogleFonts.lato(
+              textStyle: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold))),
+      alignment: const Alignment(-0.9, -0.5),
     );
   }
 }

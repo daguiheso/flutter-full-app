@@ -1,27 +1,30 @@
 import 'package:flutter/material.dart';
 
 class ProfileInfo extends StatelessWidget {
+  final String imgProfile;
+  final String name;
+  final String email;
 
-  String imgProfile;
-  String name;
-  String email;
-
-  ProfileInfo(this.imgProfile, this.name, this.email);
+  const ProfileInfo(
+      {Key? key,
+      required this.imgProfile,
+      required this.name,
+      required this.email})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final perfilPhoto = Container(
-      margin: EdgeInsets.only(right: 20),
+      margin: const EdgeInsets.only(right: 20),
       width: 90,
       height: 90,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.white, width: 2),
-        shape: BoxShape.circle,
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage(imgProfile),
-        )
-      ),
+          border: Border.all(color: Colors.white, width: 2),
+          shape: BoxShape.circle,
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage(imgProfile),
+          )),
     );
 
     final perfilDescription = Column(
@@ -29,7 +32,7 @@ class ProfileInfo extends StatelessWidget {
       children: <Widget>[
         Text(
           name,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -38,11 +41,8 @@ class ProfileInfo extends StatelessWidget {
         ),
         Text(
           email,
-          style: TextStyle(
-            color: Colors.white30,
-            fontSize: 15,
-            fontFamily: 'Lato'
-          ),
+          style: const TextStyle(
+              color: Colors.white30, fontSize: 15, fontFamily: 'Lato'),
         )
       ],
     );

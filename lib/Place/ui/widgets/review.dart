@@ -1,78 +1,79 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Review extends StatelessWidget {
-  String pathImage;
-  String name;
-  String details;
-  String comment;
+  final String pathImage;
+  final String name;
+  final String details;
+  final String comment;
 
-  Review(this.pathImage, this.name, this.details, this.comment);
+  const Review(
+      {Key? key,
+      required this.pathImage,
+      required this.name,
+      required this.details,
+      required this.comment})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final photo = Container(
-      margin: EdgeInsets.only(top: 20, left: 20),
-      width: 80,
-      height: 80,
+      margin: const EdgeInsets.only(top: 20.0, left: 20.0),
+      width: 80.0,
+      height: 80.0,
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage(pathImage)
-        )
-      ),
+          shape: BoxShape.circle,
+          image:
+              DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
 
     final userName = Container(
-      margin: EdgeInsets.only(left: 20),
+      margin: const EdgeInsets.only(
+        left: 20.0,
+      ),
       child: Text(
         name,
         textAlign: TextAlign.left,
-        style: TextStyle(fontSize: 17, fontFamily: 'Lato'),
+        style: GoogleFonts.lato(
+            textStyle: const TextStyle(
+          fontSize: 17.0,
+        )),
       ),
     );
 
     final userInfo = Container(
-      margin: EdgeInsets.only(left: 20),
+      margin: const EdgeInsets.only(
+        left: 20.0,
+      ),
       child: Text(
         details,
         textAlign: TextAlign.left,
-        style: TextStyle(
-          fontSize: 13,
-          fontFamily: 'Lato',
-          color: Color(0xFFa3a5a7)
-        ),
+        style: GoogleFonts.lato(
+            textStyle:
+                const TextStyle(fontSize: 13.0, color: Color(0xFFa3a4a7))),
       ),
     );
 
     final userComment = Container(
-      width: MediaQuery.of(context).size.width*0.65,
-      margin: EdgeInsets.only(left: 20),
+      margin: const EdgeInsets.only(
+        left: 20.0,
+      ),
       child: Text(
         comment,
         textAlign: TextAlign.left,
-        style: TextStyle(
-          fontSize: 13,
-          fontFamily: 'Lato',
-          fontWeight: FontWeight.w900
-        ),
+        style: GoogleFonts.lato(
+            textStyle:
+                const TextStyle(fontSize: 13.0, fontWeight: FontWeight.w900)),
       ),
     );
 
     final userDetails = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        userName,
-        userInfo,
-        userComment
-      ],
+      children: [userName, userInfo, userComment],
     );
 
     return Row(
-      children: <Widget>[
-        photo,
-        userDetails
-      ],
+      children: [photo, userDetails],
     );
   }
 }
