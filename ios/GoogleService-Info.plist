@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>934194998892-be3jo0lg8v5k1i85mqd6dil2bpj1r8o1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.934194998892-be3jo0lg8v5k1i85mqd6dil2bpj1r8o1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>934194998892-9f19q8gdjgtdqc1tjis8arqq2v15db7o.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAuRo7Mlho23EBa7aRN2jKe-nX3B9it0s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>934194998892</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>photos-flutter-app</string>
+	<key>PROJECT_ID</key>
+	<string>photos-flutter-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>photos-flutter-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:934194998892:ios:9b2a4b676ed274933b7249</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
