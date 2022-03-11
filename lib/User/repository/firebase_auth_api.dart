@@ -24,4 +24,12 @@ class FirebaseAuthAPI {
     // Once signed in, return the UserCredential
     return user;
   }
+
+  signOut() async {
+    // ignore: avoid_print
+    await _auth.signOut().then((value) => print('Sesión cerrada'));
+    _googleSignIn.signOut();
+    // ignore: avoid_print
+    print('Sesiones cerradas');
+  }
 }
