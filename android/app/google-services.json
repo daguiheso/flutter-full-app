@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "934194998892",
+    "project_id": "photos-flutter-app",
+    "storage_bucket": "photos-flutter-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934194998892:android:d9e452c4eed215d83b7249",
+        "android_client_info": {
+          "package_name": "com.photos.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934194998892-9f19q8gdjgtdqc1tjis8arqq2v15db7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.photos.flutter_app",
+            "certificate_hash": "5f3d123a42f117ce88648b2785b409ed9b2d097d"
+          }
+        },
+        {
+          "client_id": "934194998892-s5ok8c0bbcve4tj2vk01bpet66o9t33a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPsSi16t95jUkXdz8VTTR2huiAIjGWuDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934194998892-s5ok8c0bbcve4tj2vk01bpet66o9t33a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
