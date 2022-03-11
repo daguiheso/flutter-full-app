@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class GradientBack extends StatelessWidget {
   final String title;
-  final double height = 0.0;
+  final double height;
 
   const GradientBack({Key? key, required this.title, required this.height})
       : super(key: key);
