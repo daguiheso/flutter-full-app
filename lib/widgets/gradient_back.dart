@@ -3,13 +3,15 @@ import 'package:google_fonts/google_fonts.dart';
 
 class GradientBack extends StatelessWidget {
   final String title;
+  final double height = 0.0;
 
-  const GradientBack({Key? key, required this.title}) : super(key: key);
+  const GradientBack({Key? key, required this.title, required this.height})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
+      height: height,
       decoration: const BoxDecoration(
           gradient: LinearGradient(
               colors: [
