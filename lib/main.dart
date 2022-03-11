@@ -1,5 +1,5 @@
 import 'package:button_animate/User/bloc/bloc_user.dart';
-import 'package:button_animate/navigation_trips.dart';
+import 'package:button_animate/User/ui/screens/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
         child: const MaterialApp(
           title: 'Flutter Demo lol',
-          home: NavigationTrips(),
+          home: SignIn(),
         ),
         bloc: UserBloc());
   }

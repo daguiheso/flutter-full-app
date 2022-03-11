@@ -1,6 +1,10 @@
+import 'package:button_animate/User/bloc/bloc_user.dart';
+import 'package:button_animate/navigation_trips.dart';
 import 'package:button_animate/widgets/ds_button.dart';
 import 'package:button_animate/widgets/gradient_back.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SignIn extends StatefulWidget {
@@ -13,9 +17,24 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignIn extends State<SignIn> {
+  late UserBloc userBloc;
+
   @override
   Widget build(BuildContext context) {
-    return signInGoogleUI();
+    userBloc = BlocProvider.of(context);
+    return _handleCurrentSession();
+  }
+
+  Widget _handleCurrentSession() {
+    return StreamBuilder(
+        stream: userBloc.authStatus,
+        builder: (BuildContext context, AsyncSnapshot snapshot) {
+          if (!snapshot.hasData || snapshot.hasError) {
+            return signInGoogleUI();
+          } else {
+            return const NavigationTrips();
+          }
+        });
   }
 
   Widget signInGoogleUI() {
@@ -40,7 +59,11 @@ class _SignIn extends State<SignIn> {
               ),
               DsButton(
                   text: 'Login with Gmail',
-                  onPressed: () {},
+                  onPressed: () {
+                    userBloc.signIn().then((UserCredential user) =>
+                        // ignore: avoid_print, unnecessary_brace_in_string_interps
+                        print('User ${user} w'));
+                  },
                   height: 50.0,
                   width: 300.0)
             ],
