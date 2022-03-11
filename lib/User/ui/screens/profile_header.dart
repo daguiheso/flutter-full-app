@@ -29,7 +29,7 @@ class ProfileHeader extends StatelessWidget {
               imgProfile: 'assets/img/profile.jpeg',
               name: 'Pathum Tzook',
               email: 'daguiheso@gmail.com'),
-          const ProfileBarActions(),
+          ProfileBarActions(),
         ],
       ),
     );
