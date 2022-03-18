@@ -1,16 +1,10 @@
+import 'package:button_animate/User/model/user.dart';
 import 'package:flutter/material.dart';
 
 class ProfileInfo extends StatelessWidget {
-  final String imgProfile;
-  final String name;
-  final String email;
+  final User user;
 
-  const ProfileInfo(
-      {Key? key,
-      required this.imgProfile,
-      required this.name,
-      required this.email})
-      : super(key: key);
+  const ProfileInfo({Key? key, required this.user}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +16,14 @@ class ProfileInfo extends StatelessWidget {
           border: Border.all(color: Colors.white, width: 2),
           shape: BoxShape.circle,
           image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage(imgProfile),
-          )),
+              fit: BoxFit.cover, image: NetworkImage(user.photo))),
     );
 
     final perfilDescription = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          name,
+          user.name,
           style: const TextStyle(
             color: Colors.white,
             fontSize: 18,
@@ -40,7 +32,7 @@ class ProfileInfo extends StatelessWidget {
           ),
         ),
         Text(
-          email,
+          user.email,
           style: const TextStyle(
               color: Colors.white30, fontSize: 15, fontFamily: 'Lato'),
         )

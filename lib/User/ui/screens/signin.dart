@@ -60,9 +60,7 @@ class _SignIn extends State<SignIn> {
               DsButton(
                   text: 'Login with Gmail',
                   onPressed: () {
-                    userBloc.signIn().then((UserCredential user) =>
-                        // ignore: avoid_print, unnecessary_brace_in_string_interps
-                        print('User ${user} w'));
+                    userBloc.signIn();
                   },
                   height: 50.0,
                   width: 300.0)
